@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="project">
+    <head>
+        <title>Apartments for Rental </title>
+        <meta charset="UTF-8">
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="../jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <link type="text/css" href="../jquery-ui-1.10.3.custom/css/cupertino/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular-resource.min.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular-route.min.js">
+       </script>
+       <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.js'></script>
+       <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+        <script src='../underscore-min.js'></script>
+        <script src='../angular-google-maps.min.js'></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+       <script src="apt.js"></script>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    </head>
+    <body>
+        <h1>Apartments for Rental - San Franscisco Bay Area</h1>
+        <div id="toprightbar"><a href="#/"> Home </a> |
+        <a href="#/about"> About </a> |
+        <a href="#/search"> search </a> |
+        <a href="#/signin"> sign-in </a> |
+        <a href="#/subscribe"> subscribe </a></div>
+<div id="sidebar">
+<table>
+Major Cities:<br>
+<tr><a href="#/city/san franscisco">San Franscisco</a></tr><br>
+<tr><a href="#/city/san jose">San Jose</a></tr><br>
+<tr><a href="#/city/oakland">Oakland</a></tr><br>
+<tr><a href="#/city/fremont">Fremont</a></tr><br>
+<tr><a href="#/city/fairfield">Fairfield</a></tr><br>
+<tr><a href="#/city/santa rosa">Santa Rosa</a></tr><br>
+<tr><a href="#/city/hayward">Hayward</a></tr><br>
+<tr><a href="#/city/sunnyvale">Sunnyvale</a></tr><br>
+<tr><a href="#/city/concord">Concord</a></tr><br>
+<tr><a href="#/city/santa clara">Santa Clara</a></tr><br>
+<tr><a href="#/city/vallejo">Vallejo</a></tr><br>
+<tr><a href="#/city/campbell">Campbell</a></tr><br>
+<tr><a href="#/city/milpitas">Milpitas</a></tr><br>
+</table>
+</div>
+    <div ng-view></div>
+    </body>
+</html>

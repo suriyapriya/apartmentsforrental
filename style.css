@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 28, 2014, 12:54:47 PM
+    Author     : kcheung
+*/
+h1
+{
+    text-shadow: 5px 5px 5px #FF0000;
+    text-align: center;
+} 
+
+.search
+{
+    float: left;
+}
+
+#sidebar {
+    float: left;
+    margin: 20px;
+    width: 180px;
+    border:2px solid;
+    background-color:#b0e0e6;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#main {
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    width: 1000px;
+    //height: 500px;
+    border:2px solid;
+    background-color:#b0e0e6;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+table
+{
+    border-collapse:collapse;
+}
+table,th, td
+{
+    border: 1px solid black;
+}
+
+#signin,#search
+{
+    padding-right: 10px;
+    //float: right;
+}
+
+#toprightbar
+{
+    float: right;
+}
+
+#googleMap 
+{    //width:500px;
+    height:500px;
+}
+
+#iwi{
+    height: 500px;
+    width: 500px;
+    padding-right: 10px;
+    float: left;
+}
+
+/*
+#thumbs
+{
+    height: 200px;
+}
+*/
+#error
+{
+    color: red;
+}
+
+.angular-google-map-container
+{
+    height: 400px;
+}
+
+#image{
+    height: 400px;
+    width: 400px;
+}

@@ -1,0 +1,34 @@
+<div id="main" ng-controller="SearchCtrl">
+    <form name="myForm">
+        <div>
+            <label>Description </label>
+            <input id="search" type="text" ng-model="word"/>
+        </div>
+        <div>
+            <label>Min Price </label>
+            <input id="search" type="text" ng-model="minprice" placeholder="minprice"/>
+        </div>
+        <div>
+            <label>Max Price </label>
+            <input id="search" type="text" ng-model="maxprice" placeholder="maxprice"/>
+        </div>
+        <div>
+            <label>Bedrooms </label>
+            <select ng-model="bedroom" ng-options="br for br in bedrooms"></select>
+        </div>
+        <button ng-click="search()">search</button>
+    </form>
+    <br/>
+    <accordion>
+        <accordion-group ng-repeat="apt in aptobj" heading="{{apt.description}}">           
+        <table>
+            <tr><td>Area[sqft]</td><td>{{apt.area}}</td></tr>
+            <tr><td>Price[$]</td><td>{{apt.price}}</td></tr>
+            <tr><td>City</td><td>{{apt.city}}</td></tr>
+        </table><br>
+    <a href="#/map/{{apt.id}}"><input type="submit" name="Map" value="Map"/></a>
+    <a href="#/amenities/{{apt.id}}"><input type="submit" name="Amenities" value="Amenities"/></a>
+    <a href="#/images/{{apt.id}}"><input type="submit" name="Images" value="Images"/></a>
+        </accordion-group>
+    </accordion>
+</div>
